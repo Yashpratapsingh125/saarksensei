@@ -12,10 +12,10 @@ spring:
     activate:
       on-profile: "dev"
   datasource:
+    url: ${CLEARDB_DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://us-cluster-east-01.k8s.cleardb.net/heroku_228a1f8c4ff8d82?reconnect=true
-    username: bd70a8bba6854b
-    password: 94950788
+    username: ${CLEARDB_USERNAME}
+    password: ${CLEARDB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -33,10 +33,10 @@ spring:
     activate:
       on-profile: "qa"
   datasource:
+    url: ${CLEARDB_DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://us-cluster-east-01.k8s.cleardb.net/heroku_228a1f8c4ff8d82?reconnect=true
-    username: bd70a8bba6854b
-    password: 94950788
+    username: ${CLEARDB_USERNAME}
+    password: ${CLEARDB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -61,10 +61,10 @@ spring:
     activate:
       on-profile: "prod"
   datasource:
+    url: ${CLEARDB_DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://us-cluster-east-01.k8s.cleardb.net/heroku_228a1f8c4ff8d82?reconnect=true
-    username: bd70a8bba6854b
-    password: 94950788
+    username: ${CLEARDB_USERNAME}
+    password: ${CLEARDB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
