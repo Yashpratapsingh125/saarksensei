@@ -16,6 +16,9 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${CLEARDB_USERNAME}
     password: ${CLEARDB_PASSWORD}
+    hikari:
+      connection-timeout: 30000  # 30 seconds
+      maximum-pool-size: 10
   jpa:
     hibernate:
       ddl-auto: update
@@ -37,6 +40,9 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: D@tabase125##
+    hikari:
+      connection-timeout: 30000  # 30 seconds
+      maximum-pool-size: 10
   jpa:
     hibernate:
       ddl-auto: update
@@ -65,6 +71,9 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${CLEARDB_USERNAME}
     password: ${CLEARDB_PASSWORD}
+    hikari:
+      connection-timeout: 30000  # 30 seconds
+      maximum-pool-size: 10
   jpa:
     hibernate:
       ddl-auto: update
