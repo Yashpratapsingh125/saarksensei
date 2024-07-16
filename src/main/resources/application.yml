@@ -17,8 +17,11 @@ spring:
     username: ${CLEARDB_USERNAME}
     password: ${CLEARDB_PASSWORD}
     hikari:
-      connection-timeout: 30000  # 30 seconds
-      maximum-pool-size: 10
+      maximum-pool-size: 30  # Adjust according to your database limits
+      minimum-idle: 10
+      idle-timeout: 30000  # milliseconds
+      pool-name: SpringBootHikariCP
+      connection-timeout: 20000  # milliseconds
   jpa:
     hibernate:
       ddl-auto: update
@@ -41,8 +44,11 @@ spring:
     username: root
     password: D@tabase125##
     hikari:
-      connection-timeout: 30000  # 30 seconds
-      maximum-pool-size: 10
+      maximum-pool-size: 30  # Adjust according to your database limits
+      minimum-idle: 10
+      idle-timeout: 30000  # milliseconds
+      pool-name: SpringBootHikariCP
+      connection-timeout: 20000  # milliseconds
   jpa:
     hibernate:
       ddl-auto: update
@@ -72,8 +78,11 @@ spring:
     username: ${CLEARDB_USERNAME}
     password: ${CLEARDB_PASSWORD}
     hikari:
-      connection-timeout: 30000  # 30 seconds
-      maximum-pool-size: 10
+      maximum-pool-size: 30  # Adjust according to your database limits
+      minimum-idle: 10
+      idle-timeout: 30000  # milliseconds
+      pool-name: SpringBootHikariCP
+      connection-timeout: 20000  # milliseconds
   jpa:
     hibernate:
       ddl-auto: update
