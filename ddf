@@ -1,0 +1,23 @@
+[33mcommit dbf1bb4ba61ccdedb684eb2eae5a8530fa5d70b5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Yash Pratap Singh <yashpratapsingh125@gmail.com>
+Date:   Tue Jul 16 19:46:26 2024 +0530
+
+    changes in xml
+
+[33mcommit f2719e3ba208f910a4430d243ce8c3aa58f61fa6[m
+Author: Yash Pratap Singh <yashpratapsingh125@gmail.com>
+Date:   Tue Jul 16 19:30:10 2024 +0530
+
+    change in java version
+
+[33mcommit ba294842ce49da01df5b6b89bb86d1265b115b21[m
+Author: Yash Pratap Singh <yashpratapsingh125@gmail.com>
+Date:   Tue Jul 16 19:07:15 2024 +0530
+
+    Initial deployment
+
+[33mcommit 9da7bed2862a48f53d9db0e28012c7ef8ce8384b[m
+Author: Yash Pratap Singh <yashpratapsingh125@gmail.com>
+Date:   Tue Jul 16 18:31:12 2024 +0530
+
+    Added Procfile for Heroku deployment
