@@ -17,7 +17,7 @@ spring:
     username: ${CLEARDB_USERNAME:root}
     password: ${CLEARDB_PASSWORD:D@tabase125##}
     hikari:
-      maximum-pool-size: 10  # Adjust this value based on your needs
+      maximum-pool-size: 15  # Adjust this value based on your needs
       minimum-idle: 5
       idle-timeout: 600000
       max-lifetime: 1800000
@@ -44,7 +44,7 @@ spring:
     username: ${CLEARDB_USERNAME:root}
     password: ${CLEARDB_PASSWORD:D@tabase125##}
     hikari:
-      maximum-pool-size: 10  # Adjust this value based on your needs
+      maximum-pool-size: 15  # Adjust this value based on your needs
       minimum-idle: 5
       idle-timeout: 600000
       max-lifetime: 1800000
@@ -78,7 +78,7 @@ spring:
     username: ${CLEARDB_USERNAME:root}
     password: ${CLEARDB_PASSWORD:D@tabase125##}
     hikari:
-      maximum-pool-size: 10  # Adjust this value based on your needs
+      maximum-pool-size: 15  # Adjust this value based on your needs
       minimum-idle: 5
       idle-timeout: 600000
       max-lifetime: 1800000
