@@ -10,27 +10,25 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Module {
+public class Processes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long moduleId;
+    private Long processId;
 
     @NotBlank
-    private String moduleName;
+    private String processName;
 
-//    @NotBlank
-//    private String moduleIntro;
+    @NotBlank
+    private String processNumber;
 
-    private int moduleNumber;
+    private String senseiMessage;
 
-//    @NotBlank
-//    private String moduleOutcome;
-//
-//    @NotBlank
-//    private String moduleDescription;
+    private String parentMessage;
+
+    private String image;
 
     @ManyToOne
-    @JoinColumn(name = "subject_id")
-    private Subject subject;
+    @JoinColumn(name = "interactive_activity_id")
+    private InteractiveActivity interactiveActivity;
 
 }

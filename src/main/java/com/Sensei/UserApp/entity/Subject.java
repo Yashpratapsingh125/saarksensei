@@ -26,5 +26,4 @@ public class Subject {
 
     private int duration;
 
-
 }
