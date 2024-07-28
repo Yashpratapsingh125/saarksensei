@@ -12,10 +12,10 @@ spring:
     activate:
       on-profile: "dev"
   datasource:
-    url: ${CLEARDB_DATABASE_URL:jdbc:mysql://localhost:3306/dcbapp}
+    url: ${CLEARDB_DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${CLEARDB_USERNAME:root}
-    password: ${CLEARDB_PASSWORD:D@tabase125##}
+    username: ${CLEARDB_USERNAME}
+    password: ${CLEARDB_PASSWORD}
     hikari:
       maximum-pool-size: 15  # Adjust this value based on your needs
       minimum-idle: 5
@@ -39,10 +39,10 @@ spring:
     activate:
       on-profile: "qa"
   datasource:
-    url: ${CLEARDB_DATABASE_URL:jdbc:mysql://localhost:3306/dcbapp}
+    url: ${CLEARDB_DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${CLEARDB_USERNAME:root}
-    password: ${CLEARDB_PASSWORD:D@tabase125##}
+    username: ${CLEARDB_USERNAME}
+    password: ${CLEARDB_PASSWORD}
     hikari:
       maximum-pool-size: 15  # Adjust this value based on your needs
       minimum-idle: 5
@@ -73,10 +73,10 @@ spring:
     activate:
       on-profile: "prod"
   datasource:
-    url: ${CLEARDB_DATABASE_URL:jdbc:mysql://localhost:3306/dcbapp}
+    url: ${CLEARDB_DATABASE_URL}
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${CLEARDB_USERNAME:root}
-    password: ${CLEARDB_PASSWORD:D@tabase125##}
+    username: ${CLEARDB_USERNAME}
+    password: ${CLEARDB_PASSWORD}
     hikari:
       maximum-pool-size: 15  # Adjust this value based on your needs
       minimum-idle: 5
