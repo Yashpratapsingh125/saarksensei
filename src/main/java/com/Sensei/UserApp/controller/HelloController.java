@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-    @Value("${welcome.message}")
-    private String welcomeMessage;
+//    @Value("${welcome.message}")
+    private String welcomeMessage = "Connected to Database";
     @GetMapping("/")
     public String helloWorld(){
         return welcomeMessage;
